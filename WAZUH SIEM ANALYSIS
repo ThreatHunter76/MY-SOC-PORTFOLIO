@@ -1,0 +1,96 @@
+# Wazuh SIEM Monitoring on Kali Linux
+
+## Overview
+This project demonstrates hands-on Security Operations Center (SOC) monitoring
+using *Wazuh SIEM* in a *Kali Linux* environment. The focus is on host-based
+log collection, alert analysis, and basic threat hunting activities.
+
+The project simulates how a SOC analyst reviews security events, evaluates alert
+severity, and interprets authentication and privilege-related activities.
+
+---
+
+## Objective
+- Monitor Linux system activity using Wazuh
+- Analyze authentication and session-related logs
+- Detect and review privilege escalation events
+- Perform alert triage using the Wazuh dashboard
+- Understand alert severity and event context
+
+---
+
+## Environment
+- *Operating System:* Kali Linux
+- *SIEM Platform:* Wazuh
+- *Monitoring Type:* Host-based log monitoring
+- *Interface:* Wazuh Web Dashboard
+
+---
+
+## Tools & Technologies
+- Wazuh SIEM
+- Linux (Kali)
+- PAM authentication logs
+- Syslog analysis
+- Threat Hunting dashboard
+- MITRE ATT&CK mapping
+
+---
+
+## Activities Performed
+- Accessed the Wazuh dashboard and threat-hunting views
+- Monitored login session events (open and close)
+- Analyzed authentication success events
+- Observed privilege escalation activity (sudo usage)
+- Reviewed alert levels and timestamps
+- Correlated alerts with MITRE ATT&CK techniques
+
+---
+
+## Key Findings
+- Authentication-related events were successfully captured and logged
+- Privilege escalation attempts via sudo were detected
+- Alerts were mostly low to medium severity
+- No critical or high-severity incidents were observed
+- Dashboard visualizations helped identify event trends
+
+---
+
+## Alert Summary
+| Category | Observation |
+|--------|------------|
+| Total alerts | 24 |
+| Critical severity | 0 |
+| High severity | 0 |
+| Medium severity | Authentication-related activity |
+| Low severity | Routine system events |
+
+---
+
+## Analyst Takeaways
+- Not all alerts indicate compromise; context is essential
+- Authentication logs are valuable for detecting misuse
+- SIEM dashboards support efficient alert triage
+- Privilege escalation monitoring is critical in Linux environments
+- Threat hunting improves visibility into system behavior
+
+---
+
+## Skills Demonstrated
+- SIEM monitoring and alert analysis
+- Linux log analysis
+- Authentication and session monitoring
+- Privilege escalation detection
+- Threat hunting fundamentals
+- SOC-style documentation
+
+---
+
+## Report
+📄 *Wazuh_SIEM_Monitoring_Report.pdf*
+
+---
+
+## Disclaimer
+This project was conducted in a controlled lab environment for educational
+and portfolio purposes only.
